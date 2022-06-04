@@ -5,8 +5,7 @@ import useSWR from "swr";
 
 const Spotify = () => {
   const fetcher = (url: string) => fetch(url).then((r) => r.json());
-  const { data } = useSWR("/api/test", fetcher);
-
+  const { data } = useSWR("/api/spotify", fetcher);
   return (
     data && (
       <Text
