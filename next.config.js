@@ -5,7 +5,7 @@ module.exports = {
     "use strict";
     return {
       "/": { page: "/" },
-      "/api": { page: "/api" },
+      "/api/spotify": { page: "/api/spotify" },
     };
   },
 };
