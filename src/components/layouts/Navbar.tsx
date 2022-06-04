@@ -27,7 +27,7 @@ const Navbar = () => {
         size="lg"
         noOfLines={1}
         letterSpacing="2px"
-        fontFamily="heading"
+        fontFamily="navbar"
       >
         BERKFELIX
       </Heading>

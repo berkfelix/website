@@ -21,7 +21,7 @@ const theme = {
     // Custom colors
   },
   fonts: {
-    heading: `'Bebas Neue', cursive`,
+    navbar: `'Bebas Neue', cursive`,
     body: `'Radio Canada', sans-serif`,
     title: `'Tiro Devanagari Hindi', serif`,
   },
