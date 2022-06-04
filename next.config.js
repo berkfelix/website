@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
-  pageExtensions: ["tsx", "ts"],
+  exportPathMap: async function () {
+    "use strict";
+    return {
+      "/": { page: "/" },
+      "/api": { page: "/api" },
+    };
+  },
 };
