@@ -5,7 +5,7 @@ import useSWR from "swr";
 
 const Spotify = () => {
   const fetcher = (url: string) => fetch(url).then((r) => r.json());
-  const { data } = useSWR("/api/spotify", fetcher);
+  const { data } = useSWR("/api/test", fetcher);
 
   return (
     data && (
@@ -21,6 +21,7 @@ const Spotify = () => {
         transition="color 300ms"
         _hover={data.isPlaying ? { color: "green.500" } : {}}
       >
+        {console.log(data)}
         {data.isPlaying ? data.name : "Not Playing"}
         <FaSpotify className="text-green-700 inline ml-2" />
       </Text>
