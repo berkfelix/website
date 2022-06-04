@@ -42,10 +42,10 @@ const Hello = () => {
           fontSize="md"
           color={useColorModeValue("neutral.600", "gray.400")}
         >
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          eligendi nemo suscipit, amet unde ratione, dignissimos consequatur
-          dolores tenetur, praesentium architecto eveniet tempora quisquam
-          fugiat ex quae non qui eos?
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+          architecto, quas consequuntur accusamus molestiae amet deserunt
+          perferendis nulla veritatis sint ex? Quasi, ad fugiat modi porro ex
+          nostrum inventore voluptate.
         </Text>
         <Flex m="2" gap="2" animation="fadeInUp 1s">
           <IconButton
@@ -53,6 +53,7 @@ const Hello = () => {
             rounded="full"
             size="md"
             as="a"
+            href="https://twitter.com/berkfelix0"
             _hover={{ bg: useColorModeValue("twitter.500", "twitter.700") }}
             icon={<FaTwitter className="text-white-600" />}
           />
@@ -61,6 +62,7 @@ const Hello = () => {
             rounded="full"
             size="md"
             as="a"
+            href="https://open.spotify.com/user/6y9zzpwv7gdsex5in1mc8xcwq?si=ec8a1bcd5bb24c1e&nd=1"
             _hover={{ bg: useColorModeValue("green.400", "green.600") }}
             icon={<FaSpotify className="text-white-600" />}
           />
@@ -69,6 +71,7 @@ const Hello = () => {
             rounded="full"
             size="md"
             as="a"
+            href="https://discord.com/users/608920145032904715"
             _hover={{ bg: useColorModeValue("facebook.400", "facebook.500") }}
             icon={<FaDiscord className="text-white-600" />}
           />

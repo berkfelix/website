@@ -29,7 +29,7 @@ const Navbar = () => {
         letterSpacing="2px"
         fontFamily="heading"
       >
-        BerkFelix
+        BERKFELIX
       </Heading>
       <Spacer />
       <Flex alignItems="center" gap="2" justifyContent="center">
