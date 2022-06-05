@@ -1,31 +1,14 @@
 import React from "react";
 import { Flex, SimpleGrid, Heading } from "@chakra-ui/react";
 import useSWR from "swr";
-import { IRepo } from "@lib/repositories";
+import { IRepo } from "../../lib/repositories";
 
-import Repository from "@components/Repository";
+import Repository from "../../components/Repository";
 
 const Projects = () => {
   const fetcher = (url: string) => fetch(url).then((r) => r.json());
   const { data } = useSWR("api/repositories", fetcher);
-  /* const dataa = [
-    {
-      name: "Website",
-      html_url: "https://berkfelix.vercel.app",
-      url: "https://berkfelix.vercel.app",
-      description:
-        "lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quisquam.",
-      stargazers_count: 0,
-      created_at: "string;",
-      pushed_at: "string;",
-      language: "Typescript",
-      forks_count: 0,
-      license: {
-        name: "MIT",
-      },
-      topics: ["chakra-ui", "tailwindcss"],
-    },
-  ];*/
+
   return (
     data && (
       <Flex w="100%" p="5" direction="column">

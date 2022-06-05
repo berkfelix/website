@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { getNowPlaying } from "@lib/spotify";
+import { getNowPlaying } from "../../lib/spotify";
 
 type Data = {
   isPlaying: boolean;

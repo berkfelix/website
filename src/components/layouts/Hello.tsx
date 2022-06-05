@@ -7,7 +7,7 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { FaSpotify, FaTwitter, FaDiscord } from "react-icons/fa";
-import Spotify from "@components/Spotify";
+import Spotify from "../../components/Spotify";
 
 const Hello = () => {
   return (

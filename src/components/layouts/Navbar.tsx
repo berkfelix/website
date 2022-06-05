@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { FaGithub } from "react-icons/fa";
 
-import ToggleColorMode from "@components/ToggleColorMode";
+import ToggleColorMode from "../../components/ToggleColorMode";
 
 const Navbar = () => {
   const iconColor = useColorModeValue("blue.800", "neutral.300");

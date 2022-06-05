@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Container, VStack } from "@chakra-ui/react";
 
-import Navbar from "@layouts/Navbar";
-import Hello from "@layouts/Hello";
-import Projects from "@layouts/Projects";
+import Navbar from "../components/layouts/Navbar";
+import Hello from "../components/layouts/Hello";
+import Projects from "../components/layouts/Projects";
 
 const Home: NextPage = () => {
   return (
