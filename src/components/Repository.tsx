@@ -76,7 +76,7 @@ const Repository = ({ repo }: Props) => {
           {repo.forks}
         </Button>
         <Button mx="1" size="xs" leftIcon={<TbLicense />}>
-          {repo.license?.name || "No license"}
+          {repo.license as string}
         </Button>
         <Spacer />
         <Text>{repo.language}</Text>

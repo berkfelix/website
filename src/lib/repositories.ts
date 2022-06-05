@@ -11,8 +11,8 @@ export interface IRepo {
   pushed_at: string;
   language: string;
   forks_count: number;
-  license?: {
-    name: string;
+  license: {
+    spdx_id?: string;
   };
   topics: string[];
 }
@@ -32,7 +32,7 @@ export const getRepositories = async () => {
     pushed_at: data.pushed_at,
     language: data.language || "Empty",
     forks: data.forks_count || 0,
-    license: data.license ? data.license.name : "Not found",
+    license: (data.license && data.license.spdx_id) || "Not found",
     topics: data.topics,
   }));
 
