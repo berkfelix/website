@@ -19,10 +19,7 @@ export default async function handler(
       created_at: "string;",
       pushed_at: "string;",
       language: "Typescript",
-      forks: 3,
-      license: {
-        name: "MIT",
-      },
+      forks: 9,
       topics: ["chakra-ui", "nextjs"],
     },
   ];

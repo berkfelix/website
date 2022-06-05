@@ -5,6 +5,8 @@ import { Container, VStack } from "@chakra-ui/react";
 import Navbar from "../components/layouts/Navbar";
 import Hello from "../components/layouts/Hello";
 import Projects from "../components/layouts/Projects";
+import Technologies from "../components/layouts/Technologies";
+import Footer from "../components/layouts/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +18,8 @@ const Home: NextPage = () => {
         <Navbar />
         <Hello />
         <Projects />
+        <Technologies />
+        <Footer />
       </Container>
     </VStack>
   );

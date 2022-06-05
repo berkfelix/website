@@ -32,11 +32,12 @@ const Repository = ({ repo }: Props) => {
   ];
   return (
     <Flex
+      animation="fadeInUp 1s"
       p="5"
       direction="column"
       borderRadius="15px"
       w="350px"
-      h="200px"
+      h="225px"
       bg={useColorModeValue("gray.200", "gray.900")}
     >
       <Flex
@@ -46,12 +47,12 @@ const Repository = ({ repo }: Props) => {
         transition="color 300ms ease-in-out"
         _hover={{ color: "blue.500" }}
       >
-        <Text fontSize="1.2rem" fontWeight="bold">
+        <Text fontSize="1.4rem" fontWeight="bold">
           {repo.name}
           <span>
-            {repo.topics.map((topic) => (
+            {repo.topics.map((topic, index) => (
               <Badge
-                key={topic}
+                key={index}
                 fontSize="0.6rem"
                 mx="0.5"
                 colorScheme={colors[Math.floor(Math.random() * colors.length)]}

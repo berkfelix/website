@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, SimpleGrid, Heading } from "@chakra-ui/react";
+import { Flex, SimpleGrid, Heading, useColorModeValue } from "@chakra-ui/react";
 import useSWR from "swr";
 import { IRepo } from "../../lib/repositories";
 
@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     data && (
-      <Flex w="100%" p="5" direction="column">
+      <Flex w="100%" p="5" direction="column" my="3rem">
         <Heading fontSize="1.5rem" color="neutral.100" m="5">
           My Projects
         </Heading>
@@ -20,8 +20,8 @@ const Projects = () => {
           placeItems="center"
           spacing={10}
         >
-          {data.map((repo: IRepo) => (
-            <Repository key={repo.name} repo={repo} />
+          {data.map((repo: IRepo, index: number) => (
+            <Repository key={index} repo={repo} />
           ))}
         </SimpleGrid>
       </Flex>
