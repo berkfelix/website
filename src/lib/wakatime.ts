@@ -71,7 +71,6 @@ export const getStats = async () => {
   ).then((response: any) =>
     response.json().then((data: any) => ({
       ...data,
-      ...dailyStats,
     }))
   );
 };
