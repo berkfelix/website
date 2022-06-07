@@ -16,7 +16,7 @@ export const techs: ITech[] = [
     logo: "https://cdn.worldvectorlogo.com/logos/sass-1.svg",
   },
   {
-    name: "Tailwindcss",
+    name: "Tailwind",
     logo: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg",
   },
   {
@@ -28,36 +28,44 @@ export const techs: ITech[] = [
     logo: "https://cdn.worldvectorlogo.com/logos/typescript.svg",
   },
   {
-    name: "Chakra-ui",
-    logo: "https://img.icons8.com/color/48/000000/chakra-ui.png",
-  },
-  {
     name: "Node.js",
     logo: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg",
   },
   {
-    name: "React",
-    logo: "https://cdn.worldvectorlogo.com/logos/react-1.svg",
+    name: "Chakra-ui",
+    logo: "https://img.icons8.com/color/48/000000/chakra-ui.png",
   },
   {
-    name: "MongoDB",
-    logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
+    name: "React",
+    logo: "https://cdn.worldvectorlogo.com/logos/react-2.svg",
   },
   {
     name: "Next.js",
     logo: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
   },
   {
-    name: "Git",
-    logo: "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+    name: "MongoDB",
+    logo: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg",
   },
   {
     name: "GitHub",
     logo: "https://cdn.worldvectorlogo.com/logos/github-icon-1.svg",
   },
   {
+    name: "Git",
+    logo: "https://cdn.worldvectorlogo.com/logos/git-icon.svg",
+  },
+  {
+    name: "Heroku",
+    logo: "https://cdn.worldvectorlogo.com/logos/heroku-4.svg",
+  },
+  {
     name: "VSCode",
     logo: "https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg",
+  },
+  {
+    name: "Webstorm",
+    logo: "https://cdn.worldvectorlogo.com/logos/webstorm-icon.svg",
   },
   {
     name: "Figma",
@@ -66,9 +74,5 @@ export const techs: ITech[] = [
   {
     name: "Postman",
     logo: "https://cdn.worldvectorlogo.com/logos/postman.svg",
-  },
-  {
-    name: "Heroku",
-    logo: "https://cdn.worldvectorlogo.com/logos/heroku-4.svg",
   },
 ];

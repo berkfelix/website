@@ -24,11 +24,12 @@ const Repository = ({ repo }: Props) => {
     "red",
     "blue",
     "green",
-    "teal",
     "yellow",
     "purple",
     "pink",
-    "orange",
+    "cyan",
+    "teal",
+    "whiteAlpha",
   ];
   return (
     <Flex
@@ -47,21 +48,21 @@ const Repository = ({ repo }: Props) => {
         transition="color 300ms ease-in-out"
         _hover={{ color: "blue.500" }}
       >
-        <Text fontSize="1.4rem" fontWeight="bold">
+        <Text fontSize="1.3rem" fontWeight="bold">
           {repo.name}
-          <span>
+          <Text>
             {repo.topics.map((topic, index) => (
               <Badge
                 key={index}
                 fontSize="0.6rem"
                 mx="0.5"
                 colorScheme={colors[Math.floor(Math.random() * colors.length)]}
-                variant="subtle"
+                variant="solid"
               >
                 #{topic}
               </Badge>
             ))}
-          </span>
+          </Text>
         </Text>
         <Spacer />
         <Icon as={FaGithub} name="github" w="5" h="5" />

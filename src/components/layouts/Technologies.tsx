@@ -11,11 +11,11 @@ import { ITech, techs } from "../../data";
 
 const Technologies = () => {
   return (
-    <Flex my="5rem" direction="column">
+    <Flex my="4rem" direction="column">
       <Heading fontSize="1.5rem" color="neutral.100" m="5">
         Technologies I use
       </Heading>
-      <SimpleGrid columns={[1, 2, 3, 4]} spacing={5}>
+      <SimpleGrid columns={[2, 3, 4]} minChildWidth="150px" spacing={7}>
         {techs.map((tech: ITech) => (
           <Flex
             key={tech.name}
@@ -27,7 +27,7 @@ const Technologies = () => {
             rounded="lg"
             maxW="sm"
           >
-            <img src={tech.logo} alt={tech.name} className="h-7 w-7" />
+            <img src={tech.logo} alt={tech.name} className="h-7 w-7 " />
             <Spacer />
             <Text fontWeight="bold">{tech.name}</Text>
           </Flex>

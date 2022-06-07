@@ -1,3 +1,1 @@
-## Parallax Effect
-
 ## text fonts
