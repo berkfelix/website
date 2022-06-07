@@ -43,16 +43,18 @@ const getDailyStats = async (access_token: string) => {
       },
     }
   ).then((response) => {
-    return response.json(); /*.then(({ data }: any) => {
-      const totalSeconds = data
-        .map((item: Data) => item.duration)
-        .reduce((a: number, b: number) => a + b, 0);
+    return response
+      .json() /**/
+      .then(({ data }: any) => {
+        const totalSeconds = data
+          .map((item: Data) => item.duration)
+          .reduce((a: number, b: number) => a + b, 0);
 
-      const daily_coding_time = timer(totalSeconds * 1000);
-      return {
-        daily_coding_time,
-      };
-    });*/
+        const daily_coding_time = timer(totalSeconds * 1000);
+        return {
+          daily_coding_time,
+        };
+      });
   });
 };
 
