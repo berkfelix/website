@@ -43,7 +43,7 @@ const getDailyStats = async (access_token: string) => {
       },
     }
   ).then((response) => {
-    return response.json().then(({ data }: any) => {
+    return response.json(); /*.then(({ data }: any) => {
       const totalSeconds = data
         .map((item: Data) => item.duration)
         .reduce((a: number, b: number) => a + b, 0);
@@ -52,7 +52,7 @@ const getDailyStats = async (access_token: string) => {
       return {
         daily_coding_time,
       };
-    });
+    });*/
   });
 };
 
