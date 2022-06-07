@@ -58,7 +58,7 @@ const getDailyStats = async (access_token: string) => {
 
 export const getStats = async () => {
   const { access_token } = await _getAccessToken();
-  const dailyStats = await getDailyStats(access_token);
+  //const dailyStats = await getDailyStats(access_token);
 
   return fetch(
     `https://wakatime.com/api/v1/users/BerkFelix/stats/last_7_days`,
@@ -71,6 +71,7 @@ export const getStats = async () => {
   ).then((response: any) =>
     response.json().then((data: any) => ({
       ...data,
+      /* ...dailyStats,*/
     }))
   );
 };
