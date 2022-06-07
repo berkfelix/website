@@ -12,7 +12,7 @@ import { ITech, techs } from "../../data";
 const Technologies = () => {
   return (
     <Flex my="4rem" direction="column">
-      <Heading fontSize="1.5rem" color="neutral.100" m="5">
+      <Heading fontSize="1.5rem" color="neutral.100" m="5" textAlign="center">
         Technologies I use
       </Heading>
       <SimpleGrid columns={[2, 3, 4]} minChildWidth="150px" spacing={7}>

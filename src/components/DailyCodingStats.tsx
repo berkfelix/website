@@ -14,7 +14,7 @@ const CodingStats = () => {
         display="inline"
         _hover={{ color: "teal.500" }}
       >
-        {data.time}
+        {data.daily_coding_time}
       </Text>
       <FaFileCode className="text-teal-700 inline ml-2" />
     </Text>

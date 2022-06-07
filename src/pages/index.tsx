@@ -4,6 +4,7 @@ import { Container, VStack } from "@chakra-ui/react";
 
 import Navbar from "../components/layouts/Navbar";
 import Hello from "../components/layouts/Hello";
+import WeeklyStats from "../components/layouts/WeeklyStats";
 import Projects from "../components/layouts/Projects";
 import Technologies from "../components/layouts/Technologies";
 import Footer from "../components/layouts/Footer";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Container maxW="3xl" p="3" position="relative">
         <Navbar />
         <Hello />
+        <WeeklyStats />
         <Projects />
         <Technologies />
         <Footer />

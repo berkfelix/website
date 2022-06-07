@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { FaSpotify, FaTwitter, FaDiscord } from "react-icons/fa";
 import Spotify from "../Spotify";
-import CodingStats from "../CodingStats";
+import DailyCodingStats from "../DailyCodingStats";
 
 const Hello = () => {
   return (
@@ -78,7 +78,7 @@ const Hello = () => {
           />
         </Flex>
         <Spotify />
-        <CodingStats />
+        <DailyCodingStats />
       </Box>
       <Image
         animation="fadeInRight 1s"
