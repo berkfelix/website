@@ -14,11 +14,6 @@ const Home: NextPage = () => {
     <VStack h="100vh" className="dark:text-neutral-400  text-slate-800">
       <Head>
         <title>Berk Felix</title>
-        <meta
-          key="keywords"
-          name="keywords"
-          content="portfolio, berk felix, berkay çay,"
-        />
         <meta name="author" content="Berkay Çay" />
       </Head>
       <Container maxW="3xl" p="3" position="relative">
