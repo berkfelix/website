@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     data && (
       <Flex w="100%" p="5" direction="column" my="3rem">
-        <Heading fontSize="1.5rem" color="neutral.100" m="5" textAlign="center">
+        <Heading fontSize="1.5rem" m="5" textAlign="center">
           My Projects
         </Heading>
         <SimpleGrid

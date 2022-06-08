@@ -15,10 +15,10 @@ const WeeklyStats = () => {
   return (
     data && (
       <Flex w="100%" p="5" direction="column" my="3rem" alignItems="center">
-        <Heading fontSize="1.5rem" color="neutral.100" m="5">
+        <Heading fontSize="1.5rem" m="5">
           Weekly Coding Stats
         </Heading>
-        <Flex direction="column" w="85%">
+        <Flex direction="column" w={["100%", "85%"]}>
           <Flex
             bg={useColorModeValue("gray.200", "gray.900")}
             direction="column"
@@ -27,28 +27,30 @@ const WeeklyStats = () => {
             p="2"
           >
             {data.data.languages.map((language: any) => (
-              <Flex key={language.name} m="5" alignItems="center">
-                <Text fontSize="1rem" color="neutral.100" w="6rem">
+              <Flex
+                position="relative"
+                key={language.name}
+                m="5"
+                alignItems="center"
+              >
+                <Text fontSize="1rem" w="6rem">
                   {language.name}
                 </Text>
                 <Progress
-                  position="relative"
+                  colorScheme="pink"
                   value={language.percent}
-                  color="green.500"
                   size="sm"
                   borderRadius="15px"
                   w="90%"
                   h="18px"
                   mx="2"
                 >
-                  <span className="absolute top-0 left-1/2 font-bold text-white text-sm">
+                  <span className="absolute top-0 left-1/2 font-bold text-sm">
                     {language.text}
                   </span>
                 </Progress>
 
-                <span className="text-teal-200 ml-1 text-sm">
-                  {language.percent}%
-                </span>
+                <span className="ml-1 text-sm">{language.percent}%</span>
               </Flex>
             ))}
           </Flex>
