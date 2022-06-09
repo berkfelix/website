@@ -15,7 +15,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Berk Felix</title>
         <meta name="author" content="Berkay Çay" />
-        <meta name="keywords" content="berkfelix, berkay, berkay çay" />
+        <meta name="keywords" content="Berkay Çay, Berkay, Berkay çay, Berkay çay kimdir?, Berkay çay kim?" />
+        <meta name="tags" content="Berkay Çay, Berkay, Berkay çay, Berkay çay kimdir?, Berkay çay kim?" />
         <meta property="og:title" content="Berk Felix" />
         <meta property="og:image" name="og:image" content="/me.png" />
       </Head>
