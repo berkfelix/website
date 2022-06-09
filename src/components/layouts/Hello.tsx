@@ -43,10 +43,9 @@ const Hello = () => {
           fontSize="md"
           color={useColorModeValue("neutral.600", "gray.400")}
         >
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-          architecto, quas consequuntur accusamus molestiae amet deserunt
-          perferendis nulla veritatis sint ex? Quasi, ad fugiat modi porro ex
-          nostrum inventore voluptate.
+          I am 17 years old and a student. I started the programming by coding a
+          discord bot then i met HTML and CSS. I've come this far and I'm still
+          trying to improve myself.
         </Text>
         <Flex m="2" gap="2" animation="fadeInUp 1s">
           <IconButton

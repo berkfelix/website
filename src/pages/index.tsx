@@ -15,9 +15,8 @@ const Home: NextPage = () => {
       <Head>
         <title>Berk Felix</title>
         <meta name="author" content="Berkay Çay" />
-        <meta name="keywords" content="berkfelix, berkay" />
+        <meta name="keywords" content="berkfelix, berkay, berkay çay" />
         <meta property="og:title" content="Berk Felix" />
-        <meta property="og:description" content="Berk Felix" />
         <meta property="og:image" name="og:image" content="/me.png" />
       </Head>
       <Container maxW="3xl" p="3" position="relative">
